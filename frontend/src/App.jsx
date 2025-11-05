@@ -1,11 +1,15 @@
 import { createBrowserRouter, RouterProvider, Route, createRoutesFromElements } from "react-router-dom";
 import Home from "./screens/Home";
 import Layout from "./screens/Layout";
+import Sports from "./screens/Sports";
+import Cafe from "./screens/Cafe";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />} >
       <Route path="/" element={<Home />} />
+      <Route path="games" element={<Sports />} />
+      <Route path="order" element={<Cafe/>} />
     </Route>
   )
 );

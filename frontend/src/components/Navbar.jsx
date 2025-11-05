@@ -1,10 +1,10 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <>
     <div className='flex justify-between items-center w-full md:px-10 px-5 py-5'>
-        <img src="https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662cd9e2344b991e0f976c49_logo-darkmode.png" alt="logo" className='w-30'/>
+        <Link to='/'><img src="https://cdn.prod.website-files.com/662c8f5868c6566dc279808a/662cd9e2344b991e0f976c49_logo-darkmode.png" alt="logo" className='w-30'/></Link>
         <div className='hidden md:block'>
             <ul className='flex gap-10'>
                 <li className='hover:underline cursor-pointer font-semibold'>Help & Support</li>
